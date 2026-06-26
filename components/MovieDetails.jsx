@@ -18,21 +18,12 @@ export default function MovieDetails() {
     return (
 
         <div className="container mt-5">
-
             <div className="row">
-
                 <div className="col-md-4">
-
-                    <img
-                        src={details.poster_path}
-                        className="img-fluid"
-                        alt=""
-                    />
-
+                    <img src={details.poster_path} className="img-fluid" alt=""/>
                 </div>
 
                 <div className="col-md-8">
-
                     <h2>{details.title}</h2>
 
                     <p>{details.overview}</p>
@@ -42,13 +33,8 @@ export default function MovieDetails() {
                     <h5>Release : {details.release_date}</h5>
 
                     <h5>Language : {details.original_language}</h5>
-
                 </div>
-
             </div>
-
         </div>
-
     )
-
 }
